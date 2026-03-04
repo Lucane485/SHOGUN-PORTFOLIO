@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="de" onmouseenter="themePlay()" onmouseleave="themeFinish()">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about_me.css">
+    <title>サムライのポートフォリオ</title>
+</head>
+
+<body>
+    <div class="scrollbar-line"></div>
+    <div id="message-box"><b>KLeiner Fehler:</b> Bitte klicke zuerst auf die Seite<b> ⤦</b><br>e.message</div>
+
+    <header id="header">
+        <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
+            <path class="fragment" d="M0,0 L650,0 L350,550 L0,350 Z" onmouseenter="glühenPlay()"
+                onmouseleave="glühenFinish()"></path>
+            <path class="fragment" d="M1000,150 L1000,1000 L250,1000 L550,450 Z" onmouseenter="glühenPlay()"
+                onmouseleave="glühenFinish()"></path>
+        </svg>
+
+        <nav class="header-nav">
+            <span class="item skills" onmouseenter="exitPlay()" onclick="linkPlaySkills()">SKILLS</span>
+
+            <div class="header-logo">
+                <div class="header-img">
+                    <img src="Icons/samurai-maske.png" alt="👹👹👹" onmouseenter="logoAboutMePlay()"
+                        onmouseleave="logoAboutMeFinish()">
+                </div>
+                <span class="header-name">ABOUT ME</span>
+            </div>
+
+            <span class="item projects" onmouseenter="exitPlay()" onclick="linkPlayProjects()">PROJECTE</span>
+        </nav>
+    </header>
+
+    <main id="main">
+        <div class="main-text" id="know">
+            <p class="text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et suscipit nihil laborum mollitia at ut
+                officiis porro aspernatur, labore assumenda possimus quae voluptates neque cumque explicabo aliquam?
+                Ipsa, debitis minus!
+            </p>
+        </div>
+    </main>
+
+    <span class="exit" onmouseenter="exitPlay()" onclick="linkPlayIndex()">RÜCKZUG!!!</span>
+
+    <footer id="footer">
+        <nav class="footer-nav">
+            <div>
+                <h1>Navigation</h1>
+
+                <h2>
+                    <span class="footer-link" onclick="window.location.href='index.html'">
+                        Startsite
+                    </span>
+                </h2>
+                <h2>
+                    <span class="footer-link" onclick="window.location.href='about_me.html'">
+                        About Me
+                    </span>
+                </h2>
+                <h2>
+                    <span class="footer-link" onclick="window.location.href='skills.html'">
+                        Skills
+                    </span>
+                </h2>
+                <h2>
+                    <span class="footer-link" onclick="window.location.href='projects.html'">
+                        Projects
+                    </span>
+                </h2>
+            </div>
+            <div>
+                <h1>About Me</h1>
+
+                <h2>
+                    <span class="footer-link" onclick="window.location.href='data.html'">
+                        Rechtliches
+                    </span>
+                </h2>
+                <h2>
+                    <span class="footer-link" id="data-li" onclick="window.location.href='about_me.html#header'">
+                        #Header
+                    </span>
+                </h2>
+                <h2>
+                    <span class="footer-link" id="data-li" onclick="window.location.href='about_me.html#main'">
+                        #Main (Project 1)
+                    </span>
+                </h2>
+                <h2>
+                    <span class="footer-link" id="data-li" onclick="window.location.href='about_me.html#footer'">
+                        #Footer
+                    </span>
+                </h2>
+
+                <div class="footer-name">
+                    <h3>Dennis Staral</h3>
+                    <h3>2026© Portfolio</h3>
+                </div>
+            </div>
+            <div>
+                <h1>Rechtliches</h1>
+
+                <h2>
+                    <span class="footer-link" onclick="window.location.href='data.html'">
+                        Rechtliches
+                    </span>
+                </h2>
+                <h2>
+                    <span class="footer-link" id="data-li" onclick="window.location.href='data.html#impressum'">
+                        #Impressum
+                    </span>
+                </h2>
+                <h2>
+                    <span class="footer-link" id="data-li" onclick="window.location.href='data.html#data'">
+                        #Datenschutzt
+                    </span>
+                </h2>
+                <h2>
+                    <span class="footer-link" id="data-li" onclick="window.location.href='data.html#credits'">
+                        #Credits
+                    </span>
+                </h2>
+            </div>
+        </nav>
+    </footer>
+
+    <script src="audio.js" defer></script>
+    <script src="about_me.js" defer></script>
+</body>
+
+</html>

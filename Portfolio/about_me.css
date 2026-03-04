@@ -1,0 +1,112 @@
+/*--------------------------------------------------
+                    Header
+--------------------------------------------------*/
+header {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.fragment {
+    fill: #1a1a1a;
+    stroke: #b30000;
+    stroke-width: 1;
+    transition: 0.6s ease;
+    pointer-events: auto;
+}
+
+.fragment:hover {
+    fill: #000;
+    stroke-width: 2;
+}
+
+.skills {
+    top: 15%;
+    right: 12%;
+    transform: rotate(10deg);
+}
+
+.projects {
+    bottom: 22%;
+    left: 8%;
+    transform: rotate(-8deg);
+}
+
+.header-logo {
+    top: 40%;
+    left: 52%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-img {
+    width: 200px;
+    height: 200px;
+    background: #000;
+    border: 1px solid #b30000;
+    clip-path: polygon(15% 0%, 100% 5%, 85% 100%, 5% 90%);
+    transition: 0.4s;
+}
+
+.header-img:hover {
+    animation: logoRotate 0.004s linear infinite;
+    border-width: 15px 15px;
+}
+
+.header-name {
+    font-size: 70px;
+    color: #fff;
+    margin-top: -20px;
+    margin-left: -80px;
+    letter-spacing: 15px;
+    text-shadow: 0 0 40px #ff0000, 0 0 10px #fff;
+}
+
+/*--------------------------------------------------
+                        Main
+--------------------------------------------------*/
+
+main {
+    position: relative;
+    z-index: 2;
+    padding: 120px 10%;
+    margin-top: -10vh;
+}
+
+.main-text {
+    max-width: 550px;
+    background: #000;
+    border-right: 4px solid #b30000;
+    padding: 50px;
+    transform: rotate(1deg);
+    scroll-margin-top: 100px;
+}
+
+.text {
+    font-size: 24px;
+    line-height: 1.5;
+    color: #d2b04c;
+}
+
+.text b {
+    color: #b30000;
+}
+
+/*--------------------------------------------------
+                    @KeyFrames
+--------------------------------------------------*/
+
+@keyframes logoRotate {
+    0% {
+        transform: scale(1.25) rotate(0deg);
+    }
+
+    100% {
+        transform: scale(1.25) rotate(360deg);
+    }
+}

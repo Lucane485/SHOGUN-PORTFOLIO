@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="de" onmouseenter="themePlay()" onmouseleave="themeFinish()">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="projects.css">
+    <title>サムライのポートフォリオ</title>
+</head>
+
+<body>
+    <div class="scrollbar-line"></div>
+    <div id="message-box"><b>KLeiner Fehler:</b> Bitte klicke zuerst auf die Seite <b>⤦</b><br>e.message</div>
+
+    <header>
+        <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
+            <path class="header-fragment" d="M1000,0 L400,0 L550,200 L450,450 L800,600 L1000,550 Z"
+                onmouseenter="glühenPlay()" onmouseleave="glühenFinish()"></path>
+            <path class="header-fragment" d="M0,975 L0,350 L200,450 L350,800 L750,965 Z" onmouseenter="glühenPlay()"
+                onmouseleave="glühenFinish()"></path>
+        </svg>
+
+        <nav class="header-nav">
+            <span class="item about" onmouseenter="exitPlay()" onclick="linkPlayAboutMe()">ABOUT
+                ME</span>
+            <div class="header-logo">
+                <div class="header-img">
+                    <img src="Icons/samurai-maske.png" alt="👹👹👹" onmouseenter="logoSkillsPlay()">
+                </div>
+                <span class="header-name">PROJECTS</span>
+            </div>
+            <span class="item skills" onmouseenter="exitPlay()" onclick="linkPlaySkills()">SKILLS</span>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main-zone">
+            <div class="main-img">
+                <iframe class="main-iframe-1" src="Projekte/MeinRestaurant/index.html" frameborder="0"></iframe>
+                <div class="main-shard-iframe-1"></div>
+            </div>
+            <div class="main-text-box">
+                <div class="main-text">
+                    <div class="line main-fragment-line-top"></div>
+                    <div class="line main-fragment-line-bottom"></div>
+                    <div class="line main-fragment-line-left"></div>
+                    <div class="line main-fragment-line-right"></div>
+
+                    <p>
+                    <h1>Mein Erstes Projekt</h1>
+                    Mein erstes großes Porjekt war diese Restaurant Seite in der 7. Klasse
+                    </p>
+                </div>
+            </div>
+            <div class="main-shard-1"></div>
+            <div class="main-shard-2">
+                <div class="main-link">
+                    <div class="line main-shard-line"></div>
+                    <span class="main-link-1" onclick="window.location.href='Projekte/MeinRestaurant/index.html'">
+                        Mein Restaurant
+                    </span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <span class="exit" onmouseenter="exitPlay()" onclick="linkPlayIndex()">RÜCKZUG!!!</span>
+
+    <footer>
+        <nav class="footer-nav">
+            <div>
+                <h1>Navigation</h1>
+
+                <h2>
+                    <span class="footer-link" onclick="window.location.href='index.html'">
+                        Startsite
+                    </span>
+                </h2>
+                <h2>
+                    <span class="footer-link" onclick="window.location.href='about_me.html'">
+                        About Me
+                    </span>
+                </h2>
+                <h2>
+                    <span class="footer-link" onclick="window.location.href='skills.html'">
+                        Skills
+                    </span>
+                </h2>
+                <h2>
+                    <span class="footer-link" onclick="window.location.href='projects.html'">
+                        Projects
+                    </span>
+                </h2>
+            </div>
+            <div>
+                <h1>blablabla</h1>
+
+                <div class="footer-name">
+                    <h3>Dennis Staral</h3>
+                    <h3>2026© Portfolio</h3>
+                </div>
+            </div>
+            <div>
+                <h1>Rechtliches</h1>
+
+                <h2>
+                    <span class="footer-link" onclick="window.location.href='data.html'">
+                        Rechtliches
+                    </span>
+                </h2>
+                <h2>
+                    <span class="footer-link" id="data-li" onclick="window.location.href='data.html#impressum'">
+                        #Impressum
+                    </span>
+                </h2>
+                <h2>
+                    <span class="footer-link" id="data-li" onclick="window.location.href='data.html#data'">
+                        #Datenschutzt
+                    </span>
+                </h2>
+                <h2>
+                    <span class="footer-link" id="data-li" onclick="window.location.href='data.html#credits'">
+                        #Credits
+                    </span>
+                </h2>
+            </div>
+        </nav>
+    </footer>
+
+    <script src="audio.js" defer></script>
+    <script src="projects.js" defer></script>
+</body>
+
+</html>

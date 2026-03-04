@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="de" onmouseenter="passivPlay()" onmouseleave="passiveFinish()">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>サムライのポートフォリオ</title>
+</head>
+
+<body>
+    <div id="message-box"><b>KLeiner Fehler:</b> Bitte klicke zuerst auf die Seite<b> ⤦</b><br><small>e.message</small>
+    </div>
+    <audio id="aktivSound" src="Sounds/zitter_pixabay(bretbernhoft).mp3"></audio>
+    <audio id="passivSound" src="Sounds/zitter_pixabay(bretbernhoft).mp3"></audio>
+    <audio id="linkSound" src="Sounds/link_pixabay(lordsonny).mp3"></audio>
+
+    <div class="logo">
+        <span class="logo-text">SHO</span>
+        <img src="Icons/samurai-maske.png" alt="👹👹👹" class="logo-img" onclick="linkPlay()"
+            onmouseenter="aktivPlay()" onmouseleave="aktivFinish()">
+        <span class="logo-text">GUN</span>
+        <div class="aura"></div>
+    </div>
+
+    <script src="index.js" defer></script>
+</body>
+
+</html>

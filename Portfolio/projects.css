@@ -1,0 +1,357 @@
+/*--------------------------------------------------
+                        Body
+--------------------------------------------------*/
+
+body {
+    padding: 0px;
+    background-color: #050505;
+}
+
+/*--------------------------------------------------
+                        Header
+--------------------------------------------------*/
+
+header {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    background: radial-gradient(circle at center, #1a0000 0%, #050505 100%);
+}
+
+header svg {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.header-fragment {
+    fill: #0d0d0d;
+    stroke: #b30000;
+    stroke-width: 2px;
+    opacity: 0.5;
+    transition: 0.6s;
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+.header-fragment:hover {
+    fill: #150000;
+    stroke: #ff3333;
+    stroke-width: 4px;
+    opacity: 1;
+    box-shadow: 0px 0px 40px #ff3333;
+    transform: scale(1.02);
+}
+
+.header-nav {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+
+.about {
+    top: 12%;
+    left: 8%;
+    transform: rotate(-8deg);
+}
+
+.skills {
+    bottom: 12%;
+    right: 8%;
+    transform: rotate(5deg);
+}
+
+.header-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: default;
+}
+
+.header-img {
+    width: 380px;
+    height: 320px;
+    background: #000000;
+    border: 4px solid #b30000;
+    clip-path: polygon(25% 0%,
+            100% 0%,
+            75% 100%,
+            0% 100%);
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 0px 0px 60px rgba(179, 0, 0, 0.4);
+    cursor: default;
+}
+
+.header-img img {
+    width: 75%;
+}
+
+.header-img:hover {
+    transform: scale(1.1) rotate(5deg);
+    border-color: #ff3333;
+    clip-path: polygon(0% 0%,
+            100% 10%,
+            100% 100%,
+            0% 90%);
+    cursor: pointer;
+}
+
+.header-name {
+    font-size: 90px;
+    color: #ffffff;
+    letter-spacing: 20px;
+    margin-top: 30px;
+    text-shadow: 0px 0px 40px #b30000;
+}
+
+/*--------------------------------------------------
+                        Main
+--------------------------------------------------*/
+
+main {
+    padding: 100px 0;
+}
+
+h1 {
+    color: #b30000;
+    font-size: 48px;
+}
+
+.main-zone {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.main-img {
+    position: relative;
+    width: 1000px;
+    height: 400px;
+    background: #111;
+    margin-left: 70px;
+    padding: 60px;
+    clip-path: polygon(2% 2%,
+            100% 0%,
+            75% 98%,
+            0% 100%);
+    border: #b30000 solid;
+}
+
+.main-text-box {
+    position: relative;
+    width: 480px;
+    height: 400px;
+    background: #111;
+    margin-left: -70px;
+    padding: 60px;
+    clip-path: polygon(12% 0%,
+            100% 0%,
+            90% 88%,
+            0% 80%);
+    border: #b30000 solid;
+}
+
+.main-text {
+    transform: rotate(0.8deg);
+    position: relative;
+    padding: 40px;
+    width: auto;
+    font-size: 28px;
+}
+
+.main-text p {
+    line-height: 1.5;
+    text-align: center;
+    margin: 0;
+    z-index: 2;
+    position: relative;
+}
+
+.main-iframe-1 {
+    height: 400px;
+    width: 1000px;
+    transform: rotate(0.5deg);
+}
+
+/*--------------- Shard ---------------*/
+
+.main-shard-iframe-1 {
+    position: relative;
+    width: 400px;
+    height: 500px;
+    background: #111;
+    padding: 60px;
+    clip-path: polygon(50% 2%,
+            50% 2%,
+            55% 58%,
+            0% 75%);
+    margin-left: auto;
+    margin-top: -440px;
+    margin-right: -260px;
+}
+
+.main-shard-1 {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: #111;
+    padding: 60px;
+    clip-path: polygon(50% 2%,
+            50% 2%,
+            55% 58%,
+            0% 75%);
+    border: #b30000 solid;
+    margin-left: auto;
+    margin-top: -350px;
+    margin-right: -112px;
+    padding-bottom: 200px;
+    transform: rotate(8deg);
+}
+
+.main-shard-2 {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: #111;
+    padding: 60px;
+    clip-path: polygon(50% 2%,
+            50% 2%,
+            55% 58%,
+            0% 75%);
+    margin-top: -150px;
+    margin-left: -248px;
+    transform: rotate(80deg);
+}
+
+/*--------------- Line ---------------*/
+
+.line {
+    position: absolute;
+    box-shadow: 0 0 10px #b30000;
+    z-index: 2;
+}
+
+/*--- Fragment Line ---*/
+
+.main-fragment-line-top {
+    top: 0;
+    left: 10%;
+    width: 80%;
+    height: 2px;
+    background: linear-gradient(to right, #b30000, transparent);
+    box-shadow: 15px -3px 10px 0px #b30000;
+}
+
+.main-fragment-line-bottom {
+    bottom: 0;
+    right: 10%;
+    width: 80%;
+    height: 2px;
+    background: linear-gradient(to left, #b30000, transparent);
+    box-shadow: 15px -3px 10px 0px #b30000;
+}
+
+.main-fragment-line-left {
+    left: 0;
+    top: 10%;
+    width: 2px;
+    height: 80%;
+    background: linear-gradient(to bottom, #b30000, transparent);
+    box-shadow: 3px -15px 10px 0px #b30000;
+}
+
+.main-fragment-line-right {
+    right: 0;
+    bottom: 10%;
+    width: 2px;
+    height: 80%;
+    background: linear-gradient(to top, #b30000, transparent);
+    box-shadow: 3px -15px 10px 0px #b30000;
+}
+
+/*--- Shard Line ---*/
+
+.main-shard-line {
+    top: 0;
+    left: 0%;
+    width: 50px;
+    height: 2px;
+    background: #b30000;
+}
+
+/*--------------- Link ---------------*/
+
+.main-link {
+    font-size: 32px;
+    transition: 0.3s;
+    text-shadow: 0 0 1px #fff, 0 0 10px #ff0000;
+    transform: rotate(300deg);
+    margin-top: 250px;
+    margin-right: 350px;
+}
+
+.main-link:hover {
+    letter-spacing: 3px;
+    text-shadow: 0 0 40px #ff0000, 0 0 10px #fff;
+}
+
+/*--------------- Shine ---------------*/
+
+#fragment-shine {
+    position: absolute;
+    top: 160%;
+    left: 160%;
+    width: 300%;
+    height: 400px;
+    background: radial-gradient(circle,
+            rgba(255, 255, 255, 0.08) 0%,
+            rgba(255, 255, 255, 0.02) 50%,
+            transparent 80%);
+
+    filter: blur(60px);
+    transform: translate(-50%, -50%) rotate(-30deg);
+    pointer-events: none;
+    animation: shine 6s linear infinite;
+}
+
+@keyframes shine {
+    0% {
+        top: 150%;
+        left: 150%;
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    40% {
+        top: -50%;
+        left: -50%;
+        opacity: 0;
+    }
+
+    100% {
+        top: -50%;
+        left: -50%;
+        opacity: 0;
+    }
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="de" onmouseenter="themePlay()" onmouseleave="themeFinish()">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="data.css">
+    <title>サムライのポートフォリオ</title>
+</head>
+
+<body>
+    <div class="scrollbar-line"></div>
+    <div class="body-bg"></div>
+    <div id="message-box"><b>KLeiner Fehler:</b> Bitte klicke zuerst auf die Seite<b> ⤦</b><br>e.message</div>
+
+    <header>
+        <div class="header-bg">法</div>
+        <div class="header-name">
+            <h1>KODEX</h1>
+            <span class="header-text">Rechtliches Fachjargon</span>
+        </div>
+    </header>
+
+    <main>
+        <div class="main-zone" id="impressum" onmouseenter="skillsPlay()">
+            <div class="main-name">
+                <h2>Impressum</h2>
+                <div class="main-line"></div>
+            </div>
+
+            <div class="main-text">
+                <p><b>Verantwortlich für das Dojo:</b></p>
+                <p>Dennis Staral<br>Musterstraße 123<br>12345 Musterstadt</p>
+
+                <h3>Kontakt-Kanal</h3>
+                <p>E-Mail: kontakt@dennis-dojo.de<br>
+                Übertragung: Gesichert</p>
+
+                <p>Die Inhalte dieser Präsenz wurden mit maximaler Präzision erstellt. Gemäß <b>§ 7 Abs. 1 TMG</b> sind wir als Diensteanbieter für eigene Inhalte auf diesen Seiten verantwortlich.</p>
+            </div>
+        </div>
+
+        <div class="main-zone" id="data" onmouseenter="skillsPlay()">
+            <div class="main-name">
+                <h2>Datenschutz</h2>
+                <div class="main-line"></div>
+            </div>
+
+            <div class="main-text">
+                <p><b>Sicherheits-Protokoll:</b></p>
+                <p>Wir respektieren die Anonymität des Pfades. Es werden keine unnötigen Fragmente Ihrer digitalen Identität gespeichert oder analysiert.</p>
+
+                <h3>TLS-Verschlüsselung</h3>
+                <p>Zum Schutz Ihrer Daten nutzen wir modernste <b>SSL/TLS-Verschlüsselung</b>. Unbefugte Zugriffe werden durch dieses digitale Schild blockiert.</p>
+            </div>
+        </div>
+
+        <div class="main-zone" id="credits" onmouseenter="skillsPlay()">
+            <div class="main-name">
+                <h2>Credits</h2>
+                <div class="main-line"></div>
+            </div>
+
+            <div class="credit-grid">
+                <div class="credit-zone">
+                    <h3>Visuals</h3>
+                    <div class="main-text">
+                        <ul>
+                            <li>Samurai Maske (Freepik)</li>
+                            <li>Interface Icons (Flaticon)</li>
+                            <li>Hintergrund-Fragmente</li>
+                            <li>Design & UI (Dennis)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="credit-zone">
+                    <h3>Audio</h3>
+                    <div class="main-text">
+                        <ul>
+                            <li>Main Theme (Pixabay)</li>
+                            <li>Vibration SFX (F2-Fans)</li>
+                            <li>Click Feedback (Lordsonny)</li>
+                            <li>Atmospheric Loops</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="link">
+            <span class="exit" id="dataLink" onmouseenter="exitPlay()" onclick="dataBackLink()">RÜCKZUG</span>
+        </div>
+    </main>
+
+    <script src="audio.js"></script>
+    <script src="data.js"></script>
+</body>
+
+</html>

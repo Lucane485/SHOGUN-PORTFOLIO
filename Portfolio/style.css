@@ -1,0 +1,206 @@
+/*--------------------------------------------------
+                        Body
+--------------------------------------------------*/
+body {
+    margin: 0;
+    background-color: #0a0a0a;
+    font-family: 'Ma Shan Zheng', cursive;
+    color: #f5f5f5;
+    overflow-x: hidden;
+    min-height: 100vh;
+    letter-spacing: 1px;
+    cursor: default;
+}
+
+.scrollbar-line {
+    position: fixed;
+    top: 0;
+    right: -0.5px;
+    width: 2px;
+    height: 100vh;
+    background: linear-gradient(to bottom, #ff0000 0%, #b30000 50%, #b3000000 100%);
+    z-index: 10;
+    box-shadow: 0 0 15px #ff000099;
+}
+
+/*--------------------------------------------------
+                        Header
+--------------------------------------------------*/
+
+svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.header-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.item {
+    font-size: 50px;
+    transition: 0.3s;
+    text-shadow: 0 0 1px #fff, 0 0 10px #ff0000;
+}
+
+.item:hover {
+    transform: scale(1.25);
+    letter-spacing: 3px;
+    text-shadow: 0 0 40px #ff0000, 0 0 10px #fff;
+}
+
+.header-nav .item,
+.header-logo {
+    position: absolute;
+    cursor: pointer;
+    user-select: none;
+    z-index: 10;
+    pointer-events: auto;
+}
+
+
+.header-img img {
+    width: 100%;
+    height: 100%;
+}
+
+/*--------------------------------------------------
+                        Exit
+--------------------------------------------------*/
+
+.exit {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    font-size: 30px;
+    color: #b30000;
+    border-bottom: 2px solid #b30000;
+    text-shadow: 0 0 1px #fff, 0 0 10px #ff0000;
+    z-index: 10;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.exit:hover {
+    transform: scale(1.25);
+    letter-spacing: 3px;
+    color: #d2b04c;
+    text-shadow: 0 0 60px #fff, 0 0 10px #ff0000;
+}
+
+/*--------------------------------------------------
+                        Footer
+--------------------------------------------------*/
+
+footer {
+    background: #111;
+    border-top: 1px solid #b30000;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+.footer-nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #be0000;
+    margin-bottom: 55px;
+    letter-spacing: 2px;
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 35px;
+    letter-spacing: 2px;
+}
+
+h3 {
+    font-size: 48px;
+    letter-spacing: 2px;
+    margin: 10px 0;
+}
+
+#data-li {
+    font-size: 28px;
+    color: #d2b04c;
+    border-bottom: 2px solid #be0000;
+}
+
+#data-li:hover {
+    font-size: 35px;
+    color: #be0000;
+    padding-left: 5px;
+    border-left: 5px solid #d2b04c;
+    border-bottom: 0px solid;
+    cursor: pointer;
+}
+
+.footer-link:hover {
+    color: #be0000;
+    padding-left: 10px;
+    border-left: 5px solid #d2b04c;
+    cursor: pointer;
+}
+
+.footer-name {
+    color: #d2b04c;
+    text-shadow: 0 0 60px #fff, 0 0 20px #be0000;
+    font-size: 48px;
+    padding-top: 45px;
+}
+
+/*--------------------------------------------------
+                    Message-Box
+--------------------------------------------------*/
+#message-box {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #b30000e6;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    box-shadow: 0 10px 30px #0000004d;
+    z-index: 10;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+#message-box.show {
+    opacity: 1;
+    transform: translateX(-50%) translateY(20px);
+}
+
+/*--------------------------------------------------
+                    Scrollbar
+--------------------------------------------------*/
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #be0000;
+    border-radius: 2.5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0a0a0a;
+}
