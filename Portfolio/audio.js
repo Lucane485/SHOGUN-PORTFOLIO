@@ -112,7 +112,7 @@ function linkPlayIndex() {
     setTimeout(function () {
         link.pause();
         link.currentTime = 0;
-        window.location.href = 'about_me.html';
+        window.location.href = 'index.html';
     }, 2500);
 
     link.play().catch(showError);
@@ -175,7 +175,7 @@ function linkPlayProjects() {
 
 function glühenPlay() {
     glühen.volume = 1;
-    glühen.play().catch(showError);   
+    glühen.play().catch(showError);
 }
 
 function glühenFinish() {
@@ -204,4 +204,29 @@ function exitPlay() {
 function skillsPlay() {
     skills.volume = 1;
     skills.play().catch(showError);
+}
+
+// ------------------------------
+// Function Site
+// ------------------------------
+
+function dataBackLink() {
+    let site = localStorage.getItem('site');
+
+    if (site === 'index') {
+        window.location.href = 'index.html';
+        console.log("Site   ⋙   Index");
+    } else if (site === 'about_me') {
+        window.location.href = 'about_me.html';
+        console.log("Site   ⋙   About_Me");
+    } else if (site === 'data') {
+        window.location.href = 'data.html';
+        console.log("Site   ⋙   Data");
+    } else if (site === 'projects') {
+        window.location.href = 'projects.html';
+        console.log("Site   ⋙   Projects");
+    } else {
+        window.location.href = 'skills.html';
+        console.log("Site   ⋙   Skills");
+    }
 }

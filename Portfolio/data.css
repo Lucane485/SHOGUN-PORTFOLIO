@@ -67,7 +67,7 @@ header h1 {
 --------------------------------------------------*/
 
 main {
-    max-width: 900px;
+    max-width: 1200px;
     margin: -50px auto 0;
     padding: 0 20px 80px;
     position: relative;
@@ -157,6 +157,19 @@ main {
 .credit-zone h3 {
     margin-top: 0;
     border: none;
+}
+
+.main-li {
+    color: #f9f9f9;
+}
+
+a {
+    color: #d2b04c;
+    text-decoration: none;
+}
+
+a:hover {
+    border-bottom: 1px solid #b30000;
 }
 
 /*--------------------------------------------------

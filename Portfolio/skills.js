@@ -1,4 +1,10 @@
 // ------------------------------
+// localStorage Skills
+// ------------------------------
+
+localStorage.setItem('site', 'skills');
+
+// ------------------------------
 // Const Text
 // ------------------------------
 
@@ -223,5 +229,3 @@ function Info() {
         console.log("Info Text Closed");
     }
 }
-
-localStorage.setItem('siteNumber', '3');

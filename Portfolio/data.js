@@ -1,68 +1,21 @@
-
-
 // ------------------------------
-// Function Link(About Me)
+// localStorage Data
 // ------------------------------
 
-function linkPlaySkills() {
-    themeFinish();
-    link.volume = 0.5;
-
-    setTimeout(function () {
-        link.pause();
-        link.currentTime = 0;
-        window.location.href = 'skills.html';
-    }, 2500);
-
-    link.play().catch(showError);
-}
+localStorage.setItem('site', 'data');
 
 // ------------------------------
-// Function Link(About Me)
-// ------------------------------
-
-function linkPlayAboutMe() {
-    themeFinish();
-    link.volume = 0.5;
-
-    setTimeout(function () {
-        link.pause();
-        link.currentTime = 0;
-        window.location.href = 'about_me.html';
-    }, 2500);
-
-    link.play().catch(showError);
-}
-
-// ------------------------------
-// Function Link(Projects)
-// ------------------------------
-
-function linkPlayProjects() {
-    themeFinish();
-    link.volume = 0.5;
-
-    setTimeout(function () {
-        link.pause();
-        link.currentTime = 0;
-        window.location.href = 'projects.html';
-    }, 2500);
-
-    link.play().catch(showError);
-}
-
-// ------------------------------
-// Function Page
+// Function dataBackLink
 // ------------------------------
 
 function dataBackLink() {
-    let number = localStorage.getItem('siteNumber');
+    let site = localStorage.getItem('site');
 
-    if (number === '1') {
-        window.location.href = 'about_me.html';
-    } else if (number === '2') {
-        window.location.href = 'projects.html';
+    if (site === 'about_me') {
+        linkPlayAboutMe();
+    } else if (site === 'projects') {
+        linkPlayProjects();
     } else {
-        window.location.href = 'skills.html';
+        linkPlaySkills();
     }
 }

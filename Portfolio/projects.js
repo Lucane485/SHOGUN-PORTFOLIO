@@ -1,1 +1,5 @@
-localStorage.setItem('siteNumber', '2');
+// ------------------------------
+// localStorage Projects
+// ------------------------------
+
+localStorage.setItem('site', 'projects');
